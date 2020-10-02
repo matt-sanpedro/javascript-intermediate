@@ -43,3 +43,24 @@ function isLeap(year) {
 }
 
 console.log(isLeap(1989));
+
+// Challenge 3: Guest List
+var guestList = ['Angela', 'Jack', 'Matt', 'Pam', 'James', 'Lara', 'Jason'];
+var isGuest = guestList.includes('Matt');
+
+if (isGuest) {
+    console.log('Welcome!');
+} else {
+    console.log('Sorry maybe next time!');
+}
+
+// // alternate solution for browser
+// var guestList = ['Angela', 'Jack', 'Pam', 'James', 'Lara', 'Jason'];
+// var name = prompt('What is your name?');
+// var isGuest = guestList.includes(name);
+//
+// if (isGuest) {
+//     alert('Welcome!');
+// } else {
+//     alert('Sorry maybe next time!');
+// }
