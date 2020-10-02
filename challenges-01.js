@@ -64,3 +64,55 @@ if (isGuest) {
 // } else {
 //     alert('Sorry maybe next time!');
 // }
+
+// Challenge 4: FizzBuzz
+var output = [];
+var count = 1;
+
+// function fizzBuzz() {
+//     if (output.length === 0) {
+//         output.push(1);
+//     } else {
+//         lastNum = output[output.length - 1];
+//         lastNum++
+//         output.push(lastNum);
+//     }
+
+//     console.log(output);
+// }
+function fizzBuzz() {
+    // conditionals for count
+    if ((count % 3 === 0) && (count % 5 === 0)) {
+        output.push('FizzBuzz');
+    } else if (count % 3 === 0) {
+        output.push('Fizz');
+    } else if (count % 5 === 0) {
+        output.push('Buzz');
+    } else {
+        output.push(count);
+    }
+
+    count++;
+    console.log(output);
+}
+
+fizzBuzz();
+
+// Challenge 5: Random person will pay for lunch
+nameList = ['Bob', 'Maria', 'Whitney', 'Terry', 'Matt'];
+
+function whosPaying(names) {
+
+/******Don't change the code above*******/
+
+    //Write your code here.
+    var n = Math.random();
+    n = Math.floor(n * names.length);
+    // console.log(n);
+    // console.log(names[n] + " is going to buy lunch today!");
+    return names[n] + " is going to buy lunch today!");
+
+/******Don't change the code below*******/
+}
+
+whosPaying(nameList);
