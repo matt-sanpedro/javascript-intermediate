@@ -170,3 +170,36 @@ function fizzBuzzForLoop() {
 }
 
 fizzBuzzForLoop();
+
+// Challenge 8: Fibonacci Generator
+function fibonacciGenerator (n) {
+//Do NOT change any of the code above 👆
+    var sequenceList = [];
+    var sumOfLastTwo;
+
+    //Write your code here:
+    for (var i = 1; i <= n; i++) {
+        if (i === 1) {
+            sequenceList.push(0);
+        } else if (i === 2) {
+            sequenceList.push(1);
+        } else {
+//             console.log('LAST TWO: ', sequenceList[i-3], sequenceList[i-2]);
+//             console.log('SEQUENCE: ', sequenceList[1]);
+//             console.log('i is: ', i);
+            sumOfLastTwo = sequenceList[i-3] + sequenceList[i-2];
+            sequenceList.push(sumOfLastTwo);
+        }
+    }
+
+    return sequenceList;
+
+
+
+
+    //Return an array of fibonacci numbers starting from 0.
+
+//Do NOT change any of the code below 👇
+}
+
+console.log(fibonacciGenerator(13));
