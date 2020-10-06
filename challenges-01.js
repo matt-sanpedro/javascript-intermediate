@@ -81,19 +81,24 @@ var count = 1;
 //     console.log(output);
 // }
 function fizzBuzz() {
-    // conditionals for count
-    if ((count % 3 === 0) && (count % 5 === 0)) {
-        output.push('FizzBuzz');
-    } else if (count % 3 === 0) {
-        output.push('Fizz');
-    } else if (count % 5 === 0) {
-        output.push('Buzz');
-    } else {
-        output.push(count);
+    // begin while loop
+    while (count <= 100) {
+        // conditionals for count
+        if ((count % 3 === 0) && (count % 5 === 0)) {
+            output.push('FizzBuzz');
+        } else if (count % 3 === 0) {
+            output.push('Fizz');
+        } else if (count % 5 === 0) {
+            output.push('Buzz');
+        } else {
+            output.push(count);
+        }
+
+        count++;
+        console.log(output);
     }
 
-    count++;
-    console.log(output);
+
 }
 
 fizzBuzz();
