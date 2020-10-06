@@ -108,9 +108,14 @@ function whosPaying(names) {
     //Write your code here.
     var n = Math.random();
     n = Math.floor(n * names.length);
-    // console.log(n);
-    // console.log(names[n] + " is going to buy lunch today!");
-    return names[n] + " is going to buy lunch today!");
+
+    // test the lower and high limits
+    var lowerLim = Math.floor(0 * names.length);
+    var higherLim = Math.floor(0.99999 * names.length);
+    console.log(lowerLim, higherLim);
+
+    // console.log(names[n] + " is going to buy lunch today");
+    return names[n] + " is going to buy lunch today";
 
 /******Don't change the code below*******/
 }
