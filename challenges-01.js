@@ -93,11 +93,10 @@ function fizzBuzz() {
         } else {
             output.push(count);
         }
-
         count++;
-        console.log(output);
     }
 
+    console.log(output);
 
 }
 
@@ -150,3 +149,24 @@ function beer(bottles) {
 }
 
 beer(99);
+
+// Challenge 7: Refactor FizzBuzz with "for loop"
+function fizzBuzzForLoop() {
+    // begin while loop
+    for (var count = 1; count <= 100; count++) {
+        // conditionals for count
+        if ((count % 3 === 0) && (count % 5 === 0)) {
+            output.push('FizzBuzz');
+        } else if (count % 3 === 0) {
+            output.push('Fizz');
+        } else if (count % 5 === 0) {
+            output.push('Buzz');
+        } else {
+            output.push(count);
+        }
+    }
+
+    console.log(output);
+}
+
+fizzBuzzForLoop();
