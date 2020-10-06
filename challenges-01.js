@@ -126,3 +126,27 @@ function whosPaying(names) {
 }
 
 whosPaying(nameList);
+
+// Challenge 6: 99 Bottles of Beer on the Wall
+function beer(bottles) {
+    // initialize variables
+//     var count = 0;
+    var minusBeer;
+
+    while (bottles > 0) {
+        minusBeer = bottles - 1;
+
+        if (bottles > 2) {
+            console.log(bottles + ' bottles of beer on the wall, ' + bottles + ' bottles of beer.  Take 1 down, pass it around ' + minusBeer + ' bottles of beer on the wall.');
+        } else if (bottles === 2) {
+            console.log(bottles + ' bottles of beer on the wall, ' + bottles + ' bottles of beer.  Take 1 down, pass it around ' + minusBeer + ' bottle of beer on the wall.');
+        } else {
+            console.log(bottles + ' bottle of beer on the wall, ' + bottles + ' bottle of beer.  Take 1 down, pass it around no more bottles of beer on the wall.');
+        }
+
+        bottles--;
+
+    }
+}
+
+beer(99);
